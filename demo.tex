@@ -1,0 +1,154 @@
+\documentclass[aspectratio=32,fontset=fandol]{beamer}
+
+\usetheme{metropolis}
+\usepackage{appendixnumberbeamer}
+\usepackage{bbding}
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+% 定义图片文件目录与扩展名
+\DeclareGraphicsExtensions{.pdf,.eps,.png,.jpg,.jpeg}
+\bibliographystyle{unsrt}
+
+% 表格中数字按小数点对齐
+\usepackage{dcolumn}
+\newcolumntype{d}[1]{D{.}{.}{#1}}
+% 算法环境宏包
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+% \usepackage{algorithm}
+
+
+% 自定义命令
+\usepackage{url}
+\usepackage{graphicx} %use graph format
+
+% hyperref 宏包在最后调用
+\usepackage{hyperref}
+\usepackage{xeCJK}
+\setCJKmainfont{Microsoft YaHei}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\logo{\includegraphics[width=1cm,height=1cm]{sjtu.png}}
+
+\setbeamertemplate{title}{
+	\vspace{4em}% additional (I added this line) vertical space above the title 
+	\raggedright%
+	\linespread{1.0}%
+	\inserttitle%
+	\par%
+	\vspace*{0.5em}% space between title and subtitle -> could be increased
+}
+
+\title{基于风火元素的风火轮合成方法}
+\subtitle{毕业设计答辩}
+\date{\today}
+\author{龙套乙}
+\institute{霍格沃茨学院\\魔法炼金学\\指导教师：路人甲}
+\titlegraphic{\hfill\includegraphics[height=1.5cm]{sjtu-logo.png}}
+
+
+
+\begin{document}
+	\maketitle
+	\begin{frame}{目录}
+		\setbeamertemplate{section in toc}[sections numbered]
+		\tableofcontents[hideallsubsections]
+	\end{frame}
+	
+	\section{绪论}
+	
+	\begin{frame}{研究背景}
+	众所周知，高手都需要载具提高逼格。\cite{rider}
+			\begin{columns}[T,onlytextwidth]
+				\column{0.5\textwidth}\textbf{科技向}
+				\begin{itemize}
+					\item 贵！
+					\item 没法贴贴！
+				\end{itemize}
+				\column{0.5\textwidth}\textbf{生物向}
+				\begin{itemize}
+					\item 不稳定！
+					\item 使用寿命低！
+			\end{itemize}
+			\end{columns}
+		\end{frame}
+	
+	
+	\begin{frame}{研究现状}
+		\begin{columns}[T,onlytextwidth]
+			\column{0.5\textwidth} 
+			\begin{itemize}				
+				\item 东方玄幻
+				\item 修仙向
+			\end{itemize}
+			\begin{block}{法宝}
+			    筋斗云
+			\end{block}
+			
+			\begin{block}{身法}
+                香港步法
+			\end{block}
+			\column{0.5\textwidth}
+			\begin{itemize}				
+				\item 西方奇幻
+				\item 魔法向			
+			\end{itemize}
+			\begin{block}{咒术}
+			    飞行术	
+			\end{block}
+			\begin{block}{法杖}
+				扫帚
+			\end{block}
+		\end{columns}
+	\begin{center}\textbf{只能用于飞行，不能用于攻击！}\end{center}
+	\end{frame}
+	
+
+	
+	\section{风火轮合成方法}
+	
+	\begin{frame}{合成方法}	\begin{center}\textbf{易证，风+火$\rightarrow$风火轮}\end{center}
+
+	    
+	\end{frame}
+	
+	\section{总结与展望}
+	
+	\begin{frame}{总结与展望}
+			
+			\begin{columns}[T,onlytextwidth]
+				\column{0.5\textwidth}\textbf{总结}
+				\begin{alertblock}{性能}
+					风火轮的速度超过了筋斗云300倍。
+				\end{alertblock}
+				
+				\begin{alertblock}{功能}
+					风火轮能点燃对手，效果拔群！
+				\end{alertblock}
+				
+				\column{0.5\textwidth}\textbf{展望}
+				\begin{alertblock}{不具备拓展性}
+					考虑拓展出风水轮，土木轮！
+				\end{alertblock}
+				
+				\begin{alertblock}{成本过高}
+					通过风火轮劫富济贫收回成本
+				\end{alertblock}
+			\end{columns}
+	\end{frame}
+
+	
+	\begin{frame}[standout]
+		Thanks!其他细节请参考原项目\cite{mtheme}
+	\end{frame}
+	
+	\begin{frame}[allowframebreaks]{参考文献}
+		
+		\bibliography{demo}
+		\bibliographystyle{abbrv}
+		
+	\end{frame}
+	
+\end{document}
+
